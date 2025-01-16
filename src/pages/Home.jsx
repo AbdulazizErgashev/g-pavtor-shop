@@ -81,6 +81,9 @@ export default function Home() {
                 </div>
 
                 <MdOutlineShoppingCart
+                  onClick={() =>
+                    dispatch({ type: "add-cart", payload: item.id })
+                  }
                   className="text-gray-500 text-xl sm:text-3xl cursor-pointer hover:text-[#7FAD39] transition"
                   aria-label={`Add ${item.title} to cart`}
                 />
