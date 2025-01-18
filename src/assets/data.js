@@ -23,7 +23,7 @@ export const products = [
     title: "Fresh organic apricot",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -34,7 +34,7 @@ export const products = [
     title: "Cucumber",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -45,7 +45,7 @@ export const products = [
     title: "Hazelnuts filbert nut",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -56,7 +56,7 @@ export const products = [
     title: "Raw Broccoli",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -67,7 +67,7 @@ export const products = [
     title: "Organic quince",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -78,7 +78,7 @@ export const products = [
     title: "Red Apple",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -89,7 +89,7 @@ export const products = [
     title: "Capsicum-green",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -100,7 +100,7 @@ export const products = [
     title: "Pear fruit",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -111,7 +111,7 @@ export const products = [
     title: "Blueberry",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -122,7 +122,7 @@ export const products = [
     title: "Fresh raspberry",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -133,7 +133,7 @@ export const products = [
     title: "Ginger",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -144,7 +144,7 @@ export const products = [
     title: "Two fresh figs",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -155,7 +155,7 @@ export const products = [
     title: "Strawberry",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -166,7 +166,7 @@ export const products = [
     title: "Eggplant",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
   {
@@ -177,7 +177,7 @@ export const products = [
     title: "Egg",
     newPrice: "$12",
     oldPrice: "$15",
-    count: 0,
+    count: 1,
     liked: false,
   },
 ];

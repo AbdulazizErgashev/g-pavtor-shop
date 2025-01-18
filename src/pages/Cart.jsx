@@ -2,14 +2,14 @@ import React, { useContext } from "react";
 import { ShopContext } from "../context/Context";
 import { MdDelete } from "react-icons/md";
 
-export default function CartTable() {
+export default function Cart() {
   const { reduceShop, dispatch } = useContext(ShopContext);
 
   return (
     <main>
       <section className="max-w-[1200px] mx-auto py-5">
         <h1 className="text-slate-700 font-mono font-bold text-3xl">
-          <span className="text-[#7FAD39]">#</span>CartTable
+          <span className="text-[#7FAD39]">#</span>Cart
         </h1>
         <div className="py-10">
           <table className="border-4 border-[#7FAD39] w-[100%] text-center">
@@ -18,19 +18,27 @@ export default function CartTable() {
                 <th className="border border-[#7FAD39] text-slate-700 py-3">
                   №
                 </th>
-                <th className="border border-[#7FAD39] text-slate-700">Nomi</th>
                 <th className="border border-[#7FAD39] text-slate-700">
-                  Narxi
+                  Title
                 </th>
                 <th className="border border-[#7FAD39] text-slate-700">
-                  Chegirma
+                  Price
                 </th>
-                <th className="border border-[#7FAD39] text-slate-700">Soni</th>
                 <th className="border border-[#7FAD39] text-slate-700">
-                  Rasmi
+                  Discount
                 </th>
+                <th className="border border-[#7FAD39] text-slate-700">
+                  Quantity
+                </th>
+                <th className="border border-[#7FAD39] text-slate-700">
+                  Image
+                </th>
+                <th className="border border-[#7FAD39] text-slate-700">Like</th>
                 <th className="border border-[#7FAD39]">
-                  <button className="text-red-700 font-black">
+                  <button
+                    className="text-red-700 font-black"
+                    onClick={() => dispatch({ type: "deleteAll" })}
+                  >
                     Delete All
                   </button>
                 </th>
@@ -51,12 +59,20 @@ export default function CartTable() {
                       <td className="border border-[#7FAD39]">
                         <img
                           src={item.img}
-                          alt="..."
+                          alt={item.title}
                           className="w-20 m-auto py-3"
                         />
                       </td>
                       <td className="border border-[#7FAD39]">
-                        <button className="text-[red] text-2xl">
+                        {item.liked ? "True" : "False"}
+                      </td>
+                      <td className="border border-[#7FAD39]">
+                        <button
+                          className="text-[red] text-2xl"
+                          onClick={() =>
+                            dispatch({ type: "delete", payload: item.id })
+                          }
+                        >
                           <MdDelete />
                         </button>
                       </td>
